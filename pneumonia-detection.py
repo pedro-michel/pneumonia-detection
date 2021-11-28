@@ -108,9 +108,10 @@ def show_custom_labels(model,bucket,photo, min_confidence):
     return len(response['CustomLabels'])
 
 def main():
-
-    bucket='proj4-bucket'
-    photo='NORMAL/testimage.jpeg'
+    
+    
+    bucket='proj4-bucket' # general model : bucket = 'var_Bucket'
+    photo='NORMAL/testimage.jpeg' # general model : photo = 'var_Photo'
     model='arn:aws:rekognition:us-east-1:857369467568:project/proj4/version/proj4.2021-11-26T09.36.42/1637930203660'
     min_confidence=95
 
